@@ -1,0 +1,86 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 30.685 ns
+From           : Bloc_Numarare_V2:inst18|Numarator_V2:inst4|inst1
+To             : N_M[1]
+From Clock     : fx
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case tpd
+Slack          : N/A
+Required Time  : None
+Actual Time    : 7.310 ns
+From           : A0
+To             : Reset_N
+From Clock     : --
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Clock Setup: 'fx'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 43.67 MHz ( period = 22.898 ns )
+From           : Bloc_Numarare_V2:inst18|Numarator_V2:inst4|inst
+To             : Bloc_Memorare:inst19|Registru_Memorare:inst7|inst3
+From Clock     : fx
+To Clock       : fx
+Failed Paths   : 0
+
+Type           : Clock Setup: 'A1'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 74.73 MHz ( period = 13.381 ns )
+From           : Bloc_Numarare_V2:inst18|Numarator_V2:inst4|inst
+To             : Bloc_Memorare:inst19|Registru_Memorare:inst7|inst3
+From Clock     : A1
+To Clock       : A1
+Failed Paths   : 0
+
+Type           : Clock Setup: 'A0'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 74.93 MHz ( period = 13.346 ns )
+From           : Bloc_Numarare_V2:inst18|Numarator_V2:inst4|inst
+To             : Bloc_Memorare:inst19|Registru_Memorare:inst7|inst3
+From Clock     : A0
+To Clock       : A0
+Failed Paths   : 0
+
+Type           : Clock Setup: 'f0'
+Slack          : N/A
+Required Time  : None
+Actual Time    : Restricted to 304.04 MHz ( period = 3.289 ns )
+From           : Bloc_Numarare_V2:inst18|Numarator_V2:inst4|inst3
+To             : Bloc_Numarare_V2:inst18|Numarator_V2:inst4|inst3
+From Clock     : f0
+To Clock       : f0
+Failed Paths   : 0
+
+Type           : Clock Hold: 'fx'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : Bloc_Numarare_V2:inst18|Numarator_V2:inst4|inst
+To             : Bloc_Numarare_V2:inst18|Numarator_V2:inst4|inst
+From Clock     : fx
+To Clock       : fx
+Failed Paths   : 56
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 56
+
+--------------------------------------------------------------------------------------
+

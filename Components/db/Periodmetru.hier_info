@@ -1,0 +1,705 @@
+|Periodmetru
+Clk_D_A <= Bloc_Divizare:inst.T0
+f0 => Bloc_Divizare:inst.f0
+fx => Bloc_Divizare:inst.fx
+A0 => Bloc_Divizare:inst.A0
+A1 => Bloc_Divizare:inst.A1
+Clk_M <= Bloc_Comanda:inst23.Tm_out
+Clk_N <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Reset_N <= Bloc_Comanda:inst23.Reset_Counter
+Tm <= Bloc_Divizare:inst.Tm
+T0 <= Bloc_Divizare:inst.T0
+Celula[3] <= Bloc_Decodificare_Afisare:inst13.Celula[3]
+Celula[2] <= Bloc_Decodificare_Afisare:inst13.Celula[2]
+Celula[1] <= Bloc_Decodificare_Afisare:inst13.Celula[1]
+Celula[0] <= Bloc_Decodificare_Afisare:inst13.Celula[0]
+M_M[0] <= Bloc_Memorare:inst19.M_M[0]
+M_M[1] <= Bloc_Memorare:inst19.M_M[1]
+M_M[2] <= Bloc_Memorare:inst19.M_M[2]
+M_M[3] <= Bloc_Memorare:inst19.M_M[3]
+M_S[0] <= Bloc_Memorare:inst19.M_S[0]
+M_S[1] <= Bloc_Memorare:inst19.M_S[1]
+M_S[2] <= Bloc_Memorare:inst19.M_S[2]
+M_S[3] <= Bloc_Memorare:inst19.M_S[3]
+M_U[0] <= Bloc_Memorare:inst19.M_U[0]
+M_U[1] <= Bloc_Memorare:inst19.M_U[1]
+M_U[2] <= Bloc_Memorare:inst19.M_U[2]
+M_U[3] <= Bloc_Memorare:inst19.M_U[3]
+M_Z[0] <= Bloc_Memorare:inst19.M_Z[0]
+M_Z[1] <= Bloc_Memorare:inst19.M_Z[1]
+M_Z[2] <= Bloc_Memorare:inst19.M_Z[2]
+M_Z[3] <= Bloc_Memorare:inst19.M_Z[3]
+N_M[0] <= Bloc_Numarare_V2:inst18.M[0]
+N_M[1] <= Bloc_Numarare_V2:inst18.M[1]
+N_M[2] <= Bloc_Numarare_V2:inst18.M[2]
+N_M[3] <= Bloc_Numarare_V2:inst18.M[3]
+N_S[0] <= Bloc_Numarare_V2:inst18.S[0]
+N_S[1] <= Bloc_Numarare_V2:inst18.S[1]
+N_S[2] <= Bloc_Numarare_V2:inst18.S[2]
+N_S[3] <= Bloc_Numarare_V2:inst18.S[3]
+N_U[0] <= Bloc_Numarare_V2:inst18.U[0]
+N_U[1] <= Bloc_Numarare_V2:inst18.U[1]
+N_U[2] <= Bloc_Numarare_V2:inst18.U[2]
+N_U[3] <= Bloc_Numarare_V2:inst18.U[3]
+N_Z[0] <= Bloc_Numarare_V2:inst18.Z[0]
+N_Z[1] <= Bloc_Numarare_V2:inst18.Z[1]
+N_Z[2] <= Bloc_Numarare_V2:inst18.Z[2]
+N_Z[3] <= Bloc_Numarare_V2:inst18.Z[3]
+Seg[6] <= Bloc_Decodificare_Afisare:inst13.Seg[6]
+Seg[5] <= Bloc_Decodificare_Afisare:inst13.Seg[5]
+Seg[4] <= Bloc_Decodificare_Afisare:inst13.Seg[4]
+Seg[3] <= Bloc_Decodificare_Afisare:inst13.Seg[3]
+Seg[2] <= Bloc_Decodificare_Afisare:inst13.Seg[2]
+Seg[1] <= Bloc_Decodificare_Afisare:inst13.Seg[1]
+Seg[0] <= Bloc_Decodificare_Afisare:inst13.Seg[0]
+
+
+|Periodmetru|Bloc_Divizare:inst
+T0 <= Div_1296:inst2.10k
+f0 => Div_1296:inst2.Clk
+Tm <= Mux41:inst8.Y
+A0 => Mux41:inst8.A0
+A1 => Mux41:inst8.A1
+fx => Divizor_2:inst.In
+fx => Div_10:inst1.In
+fx => Div_10:inst3.In
+fx => Div_10:inst5.In
+
+
+|Periodmetru|Bloc_Divizare:inst|Div_1296:inst2
+10k <= Div_81:inst1.Out
+Clk => Div_16:inst.In
+
+
+|Periodmetru|Bloc_Divizare:inst|Div_1296:inst2|Div_81:inst1
+Out <= Divizor_3:inst4.Out
+In => Divizor_3:inst.In
+
+
+|Periodmetru|Bloc_Divizare:inst|Div_1296:inst2|Div_81:inst1|Divizor_3:inst4
+Out <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+In => inst13.CLK
+In => inst14.CLK
+
+
+|Periodmetru|Bloc_Divizare:inst|Div_1296:inst2|Div_81:inst1|Divizor_3:inst3
+Out <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+In => inst13.CLK
+In => inst14.CLK
+
+
+|Periodmetru|Bloc_Divizare:inst|Div_1296:inst2|Div_81:inst1|Divizor_3:inst2
+Out <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+In => inst13.CLK
+In => inst14.CLK
+
+
+|Periodmetru|Bloc_Divizare:inst|Div_1296:inst2|Div_81:inst1|Divizor_3:inst
+Out <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+In => inst13.CLK
+In => inst14.CLK
+
+
+|Periodmetru|Bloc_Divizare:inst|Div_1296:inst2|Div_16:inst
+Out <= Divizor_2:inst3.Out
+In => Divizor_2:inst.In
+
+
+|Periodmetru|Bloc_Divizare:inst|Div_1296:inst2|Div_16:inst|Divizor_2:inst3
+Out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+In => inst.CLK
+
+
+|Periodmetru|Bloc_Divizare:inst|Div_1296:inst2|Div_16:inst|Divizor_2:inst2
+Out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+In => inst.CLK
+
+
+|Periodmetru|Bloc_Divizare:inst|Div_1296:inst2|Div_16:inst|Divizor_2:inst1
+Out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+In => inst.CLK
+
+
+|Periodmetru|Bloc_Divizare:inst|Div_1296:inst2|Div_16:inst|Divizor_2:inst
+Out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+In => inst.CLK
+
+
+|Periodmetru|Bloc_Divizare:inst|Mux41:inst8
+Y <= Mux21:inst2.Y
+A1 => Mux21:inst2.A
+A0 => Mux21:inst.A
+A0 => Mux21:inst1.A
+D0 => Mux21:inst.D0
+D1 => Mux21:inst.D1
+D2 => Mux21:inst1.D0
+D3 => Mux21:inst1.D1
+
+
+|Periodmetru|Bloc_Divizare:inst|Mux41:inst8|Mux21:inst2
+Y <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst.IN0
+D1 => inst4.IN1
+D0 => inst3.IN1
+
+
+|Periodmetru|Bloc_Divizare:inst|Mux41:inst8|Mux21:inst
+Y <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst.IN0
+D1 => inst4.IN1
+D0 => inst3.IN1
+
+
+|Periodmetru|Bloc_Divizare:inst|Mux41:inst8|Mux21:inst1
+Y <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst.IN0
+D1 => inst4.IN1
+D0 => inst3.IN1
+
+
+|Periodmetru|Bloc_Divizare:inst|Divizor_2:inst
+Out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+In => inst.CLK
+
+
+|Periodmetru|Bloc_Divizare:inst|Divizor_2:inst28
+Out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+In => inst.CLK
+
+
+|Periodmetru|Bloc_Divizare:inst|Div_10:inst1
+Out <= Divizor_2:inst.Out
+In => Div_5:inst1.In
+
+
+|Periodmetru|Bloc_Divizare:inst|Div_10:inst1|Divizor_2:inst
+Out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+In => inst.CLK
+
+
+|Periodmetru|Bloc_Divizare:inst|Div_10:inst1|Div_5:inst1
+Out <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+In => inst13.CLK
+In => inst14.CLK
+In => inst15.CLK
+
+
+|Periodmetru|Bloc_Divizare:inst|Divizor_2:inst30
+Out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+In => inst.CLK
+
+
+|Periodmetru|Bloc_Divizare:inst|Div_10:inst4
+Out <= Divizor_2:inst.Out
+In => Div_5:inst1.In
+
+
+|Periodmetru|Bloc_Divizare:inst|Div_10:inst4|Divizor_2:inst
+Out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+In => inst.CLK
+
+
+|Periodmetru|Bloc_Divizare:inst|Div_10:inst4|Div_5:inst1
+Out <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+In => inst13.CLK
+In => inst14.CLK
+In => inst15.CLK
+
+
+|Periodmetru|Bloc_Divizare:inst|Div_10:inst3
+Out <= Divizor_2:inst.Out
+In => Div_5:inst1.In
+
+
+|Periodmetru|Bloc_Divizare:inst|Div_10:inst3|Divizor_2:inst
+Out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+In => inst.CLK
+
+
+|Periodmetru|Bloc_Divizare:inst|Div_10:inst3|Div_5:inst1
+Out <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+In => inst13.CLK
+In => inst14.CLK
+In => inst15.CLK
+
+
+|Periodmetru|Bloc_Divizare:inst|Divizor_2:inst32
+Out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+In => inst.CLK
+
+
+|Periodmetru|Bloc_Divizare:inst|Div_10:inst7
+Out <= Divizor_2:inst.Out
+In => Div_5:inst1.In
+
+
+|Periodmetru|Bloc_Divizare:inst|Div_10:inst7|Divizor_2:inst
+Out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+In => inst.CLK
+
+
+|Periodmetru|Bloc_Divizare:inst|Div_10:inst7|Div_5:inst1
+Out <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+In => inst13.CLK
+In => inst14.CLK
+In => inst15.CLK
+
+
+|Periodmetru|Bloc_Divizare:inst|Div_10:inst6
+Out <= Divizor_2:inst.Out
+In => Div_5:inst1.In
+
+
+|Periodmetru|Bloc_Divizare:inst|Div_10:inst6|Divizor_2:inst
+Out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+In => inst.CLK
+
+
+|Periodmetru|Bloc_Divizare:inst|Div_10:inst6|Div_5:inst1
+Out <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+In => inst13.CLK
+In => inst14.CLK
+In => inst15.CLK
+
+
+|Periodmetru|Bloc_Divizare:inst|Div_10:inst5
+Out <= Divizor_2:inst.Out
+In => Div_5:inst1.In
+
+
+|Periodmetru|Bloc_Divizare:inst|Div_10:inst5|Divizor_2:inst
+Out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+In => inst.CLK
+
+
+|Periodmetru|Bloc_Divizare:inst|Div_10:inst5|Div_5:inst1
+Out <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+In => inst13.CLK
+In => inst14.CLK
+In => inst15.CLK
+
+
+|Periodmetru|Bloc_Comanda:inst23
+Reset_Counter <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Tm_input => inst5.IN0
+Tm_input => Tm_out.DATAIN
+C_M[0] => OR_M.IN0
+C_M[1] => OR_M.IN3
+C_M[2] => OR_M.IN1
+C_M[3] => OR_M.IN2
+C_Z[0] => OR_Z.IN0
+C_Z[1] => OR_Z.IN3
+C_Z[2] => OR_Z.IN1
+C_Z[3] => OR_Z.IN2
+C_U[0] => OR_U.IN0
+C_U[1] => OR_U.IN3
+C_U[2] => OR_U.IN1
+C_U[3] => OR_U.IN2
+C_S[0] => OR_S.IN0
+C_S[1] => OR_S.IN3
+C_S[2] => OR_S.IN1
+C_S[3] => OR_S.IN2
+Tm_out <= Tm_input.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Periodmetru|Bloc_Memorare:inst19
+M_M[0] <= Registru_Memorare:inst7.Out[0]
+M_M[1] <= Registru_Memorare:inst7.Out[1]
+M_M[2] <= Registru_Memorare:inst7.Out[2]
+M_M[3] <= Registru_Memorare:inst7.Out[3]
+Clk => Registru_Memorare:inst7.Clk
+Clk => Registru_Memorare:inst6.Clk
+Clk => Registru_Memorare:inst.Clk
+Clk => Registru_Memorare:inst5.Clk
+IN_M[0] => Registru_Memorare:inst7.D[0]
+IN_M[1] => Registru_Memorare:inst7.D[1]
+IN_M[2] => Registru_Memorare:inst7.D[2]
+IN_M[3] => Registru_Memorare:inst7.D[3]
+M_S[0] <= Registru_Memorare:inst6.Out[0]
+M_S[1] <= Registru_Memorare:inst6.Out[1]
+M_S[2] <= Registru_Memorare:inst6.Out[2]
+M_S[3] <= Registru_Memorare:inst6.Out[3]
+IN_S[0] => Registru_Memorare:inst6.D[0]
+IN_S[1] => Registru_Memorare:inst6.D[1]
+IN_S[2] => Registru_Memorare:inst6.D[2]
+IN_S[3] => Registru_Memorare:inst6.D[3]
+M_U[0] <= Registru_Memorare:inst.Out[0]
+M_U[1] <= Registru_Memorare:inst.Out[1]
+M_U[2] <= Registru_Memorare:inst.Out[2]
+M_U[3] <= Registru_Memorare:inst.Out[3]
+IN_U[0] => Registru_Memorare:inst.D[0]
+IN_U[1] => Registru_Memorare:inst.D[1]
+IN_U[2] => Registru_Memorare:inst.D[2]
+IN_U[3] => Registru_Memorare:inst.D[3]
+M_Z[0] <= Registru_Memorare:inst5.Out[0]
+M_Z[1] <= Registru_Memorare:inst5.Out[1]
+M_Z[2] <= Registru_Memorare:inst5.Out[2]
+M_Z[3] <= Registru_Memorare:inst5.Out[3]
+IN_Z[0] => Registru_Memorare:inst5.D[0]
+IN_Z[1] => Registru_Memorare:inst5.D[1]
+IN_Z[2] => Registru_Memorare:inst5.D[2]
+IN_Z[3] => Registru_Memorare:inst5.D[3]
+
+
+|Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst7
+Out[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Out[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Out[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Out[3] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Clk => inst5.IN0
+D[0] => inst3.DATAIN
+D[1] => inst2.DATAIN
+D[2] => inst1.DATAIN
+D[3] => inst.DATAIN
+
+
+|Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst6
+Out[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Out[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Out[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Out[3] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Clk => inst5.IN0
+D[0] => inst3.DATAIN
+D[1] => inst2.DATAIN
+D[2] => inst1.DATAIN
+D[3] => inst.DATAIN
+
+
+|Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst
+Out[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Out[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Out[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Out[3] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Clk => inst5.IN0
+D[0] => inst3.DATAIN
+D[1] => inst2.DATAIN
+D[2] => inst1.DATAIN
+D[3] => inst.DATAIN
+
+
+|Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst5
+Out[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Out[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Out[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Out[3] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Clk => inst5.IN0
+D[0] => inst3.DATAIN
+D[1] => inst2.DATAIN
+D[2] => inst1.DATAIN
+D[3] => inst.DATAIN
+
+
+|Periodmetru|Bloc_Numarare_V2:inst18
+M[0] <= Numarator_V2:inst4.Q[0]
+M[1] <= Numarator_V2:inst4.Q[1]
+M[2] <= Numarator_V2:inst4.Q[2]
+M[3] <= Numarator_V2:inst4.Q[3]
+Reset => Numarator_V2:inst4.Reset
+Reset => Numarator_V2:inst3.Reset
+Reset => Numarator_V2:inst2.Reset
+Reset => Numarator_V2:inst.Reset
+Clk => Numarator_V2:inst.Clk
+S[0] <= Numarator_V2:inst3.Q[0]
+S[1] <= Numarator_V2:inst3.Q[1]
+S[2] <= Numarator_V2:inst3.Q[2]
+S[3] <= Numarator_V2:inst3.Q[3]
+U[0] <= Numarator_V2:inst.Q[0]
+U[1] <= Numarator_V2:inst.Q[1]
+U[2] <= Numarator_V2:inst.Q[2]
+U[3] <= Numarator_V2:inst.Q[3]
+Z[0] <= Numarator_V2:inst2.Q[0]
+Z[1] <= Numarator_V2:inst2.Q[1]
+Z[2] <= Numarator_V2:inst2.Q[2]
+Z[3] <= Numarator_V2:inst2.Q[3]
+
+
+|Periodmetru|Bloc_Numarare_V2:inst18|Numarator_V2:inst4
+Carry <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+Q[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Reset => inst3.ACLR
+Reset => inst4.ACLR
+Reset => inst1.ACLR
+Reset => inst.ACLR
+Clk => inst3.CLK
+Clk => inst4.CLK
+Clk => inst1.CLK
+Clk => inst.CLK
+
+
+|Periodmetru|Bloc_Numarare_V2:inst18|Numarator_V2:inst3
+Carry <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+Q[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Reset => inst3.ACLR
+Reset => inst4.ACLR
+Reset => inst1.ACLR
+Reset => inst.ACLR
+Clk => inst3.CLK
+Clk => inst4.CLK
+Clk => inst1.CLK
+Clk => inst.CLK
+
+
+|Periodmetru|Bloc_Numarare_V2:inst18|Numarator_V2:inst2
+Carry <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+Q[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Reset => inst3.ACLR
+Reset => inst4.ACLR
+Reset => inst1.ACLR
+Reset => inst.ACLR
+Clk => inst3.CLK
+Clk => inst4.CLK
+Clk => inst1.CLK
+Clk => inst.CLK
+
+
+|Periodmetru|Bloc_Numarare_V2:inst18|Numarator_V2:inst
+Carry <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+Q[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Reset => inst3.ACLR
+Reset => inst4.ACLR
+Reset => inst1.ACLR
+Reset => inst.ACLR
+Clk => inst3.CLK
+Clk => inst4.CLK
+Clk => inst1.CLK
+Clk => inst.CLK
+
+
+|Periodmetru|Bloc_Decodificare_Afisare:inst13
+Celula[3] <= Decodificator_de_adresa:inst5.Y3
+Celula[2] <= Decodificator_de_adresa:inst5.Y2
+Celula[1] <= Decodificator_de_adresa:inst5.Y1
+Celula[0] <= Decodificator_de_adresa:inst5.Y0
+Clk => Scaner:inst6.Clk
+Seg[6] <= Decodificator:inst4.g_seg
+Seg[5] <= Decodificator:inst4.f_seg
+Seg[4] <= Decodificator:inst4.e_seg
+Seg[3] <= Decodificator:inst4.d_seg
+Seg[2] <= Decodificator:inst4.c_seg
+Seg[1] <= Decodificator:inst4.b_seg
+Seg[0] <= Decodificator:inst4.a_seg
+U[0] => Mux41:inst.D0
+U[1] => Mux41:inst1.D0
+U[2] => Mux41:inst2.D0
+U[3] => Mux41:inst3.D0
+Z[0] => Mux41:inst.D1
+Z[1] => Mux41:inst1.D1
+Z[2] => Mux41:inst2.D1
+Z[3] => Mux41:inst3.D1
+S[0] => Mux41:inst.D2
+S[1] => Mux41:inst1.D2
+S[2] => Mux41:inst2.D2
+S[3] => Mux41:inst3.D2
+M[0] => Mux41:inst.D3
+M[1] => Mux41:inst1.D3
+M[2] => Mux41:inst2.D3
+M[3] => Mux41:inst3.D3
+
+
+|Periodmetru|Bloc_Decodificare_Afisare:inst13|Decodificator_de_adresa:inst5
+Y0 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst4.IN0
+A => inst6.IN0
+B => inst2.IN0
+B => inst5.IN1
+B => inst6.IN1
+Y1 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Y2 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+Y3 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Periodmetru|Bloc_Decodificare_Afisare:inst13|Scaner:inst6
+Q0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Clk => inst.CLK
+Clk => inst1.CLK
+Q1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Periodmetru|Bloc_Decodificare_Afisare:inst13|Decodificator:inst4
+a_seg <= inst33.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst31.IN0
+A => inst34.IN0
+A => inst39.IN0
+A => inst44.IN0
+A => inst48.IN0
+A => inst46.IN0
+A => inst51.IN0
+B => inst2.IN0
+B => inst34.IN1
+B => inst37.IN1
+B => inst39.IN1
+B => inst47.IN0
+B => inst46.IN1
+B => inst51.IN1
+C => inst32.IN2
+C => inst4.IN0
+C => inst35.IN1
+C => inst40.IN1
+C => inst43.IN1
+C => inst51.IN2
+D => inst5.IN0
+b_seg <= inst35.DB_MAX_OUTPUT_PORT_TYPE
+c_seg <= inst37.DB_MAX_OUTPUT_PORT_TYPE
+d_seg <= inst41.DB_MAX_OUTPUT_PORT_TYPE
+e_seg <= inst44.DB_MAX_OUTPUT_PORT_TYPE
+f_seg <= inst49.DB_MAX_OUTPUT_PORT_TYPE
+g_seg <= inst52.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Periodmetru|Bloc_Decodificare_Afisare:inst13|Mux41:inst
+Y <= Mux21:inst2.Y
+A1 => Mux21:inst2.A
+A0 => Mux21:inst.A
+A0 => Mux21:inst1.A
+D0 => Mux21:inst.D0
+D1 => Mux21:inst.D1
+D2 => Mux21:inst1.D0
+D3 => Mux21:inst1.D1
+
+
+|Periodmetru|Bloc_Decodificare_Afisare:inst13|Mux41:inst|Mux21:inst2
+Y <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst.IN0
+D1 => inst4.IN1
+D0 => inst3.IN1
+
+
+|Periodmetru|Bloc_Decodificare_Afisare:inst13|Mux41:inst|Mux21:inst
+Y <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst.IN0
+D1 => inst4.IN1
+D0 => inst3.IN1
+
+
+|Periodmetru|Bloc_Decodificare_Afisare:inst13|Mux41:inst|Mux21:inst1
+Y <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst.IN0
+D1 => inst4.IN1
+D0 => inst3.IN1
+
+
+|Periodmetru|Bloc_Decodificare_Afisare:inst13|Mux41:inst1
+Y <= Mux21:inst2.Y
+A1 => Mux21:inst2.A
+A0 => Mux21:inst.A
+A0 => Mux21:inst1.A
+D0 => Mux21:inst.D0
+D1 => Mux21:inst.D1
+D2 => Mux21:inst1.D0
+D3 => Mux21:inst1.D1
+
+
+|Periodmetru|Bloc_Decodificare_Afisare:inst13|Mux41:inst1|Mux21:inst2
+Y <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst.IN0
+D1 => inst4.IN1
+D0 => inst3.IN1
+
+
+|Periodmetru|Bloc_Decodificare_Afisare:inst13|Mux41:inst1|Mux21:inst
+Y <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst.IN0
+D1 => inst4.IN1
+D0 => inst3.IN1
+
+
+|Periodmetru|Bloc_Decodificare_Afisare:inst13|Mux41:inst1|Mux21:inst1
+Y <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst.IN0
+D1 => inst4.IN1
+D0 => inst3.IN1
+
+
+|Periodmetru|Bloc_Decodificare_Afisare:inst13|Mux41:inst2
+Y <= Mux21:inst2.Y
+A1 => Mux21:inst2.A
+A0 => Mux21:inst.A
+A0 => Mux21:inst1.A
+D0 => Mux21:inst.D0
+D1 => Mux21:inst.D1
+D2 => Mux21:inst1.D0
+D3 => Mux21:inst1.D1
+
+
+|Periodmetru|Bloc_Decodificare_Afisare:inst13|Mux41:inst2|Mux21:inst2
+Y <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst.IN0
+D1 => inst4.IN1
+D0 => inst3.IN1
+
+
+|Periodmetru|Bloc_Decodificare_Afisare:inst13|Mux41:inst2|Mux21:inst
+Y <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst.IN0
+D1 => inst4.IN1
+D0 => inst3.IN1
+
+
+|Periodmetru|Bloc_Decodificare_Afisare:inst13|Mux41:inst2|Mux21:inst1
+Y <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst.IN0
+D1 => inst4.IN1
+D0 => inst3.IN1
+
+
+|Periodmetru|Bloc_Decodificare_Afisare:inst13|Mux41:inst3
+Y <= Mux21:inst2.Y
+A1 => Mux21:inst2.A
+A0 => Mux21:inst.A
+A0 => Mux21:inst1.A
+D0 => Mux21:inst.D0
+D1 => Mux21:inst.D1
+D2 => Mux21:inst1.D0
+D3 => Mux21:inst1.D1
+
+
+|Periodmetru|Bloc_Decodificare_Afisare:inst13|Mux41:inst3|Mux21:inst2
+Y <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst.IN0
+D1 => inst4.IN1
+D0 => inst3.IN1
+
+
+|Periodmetru|Bloc_Decodificare_Afisare:inst13|Mux41:inst3|Mux21:inst
+Y <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst.IN0
+D1 => inst4.IN1
+D0 => inst3.IN1
+
+
+|Periodmetru|Bloc_Decodificare_Afisare:inst13|Mux41:inst3|Mux21:inst1
+Y <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst.IN0
+D1 => inst4.IN1
+D0 => inst3.IN1
+
+

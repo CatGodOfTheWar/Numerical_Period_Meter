@@ -1,0 +1,473 @@
+Quartus II
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+45
+3700
+OFF
+OFF
+OFF
+ON
+ON
+OFF
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+Decodificator
+# storage
+db|Periodmetru.(0).cnf
+db|Periodmetru.(0).cnf
+# case_insensitive
+# source_file
+decodificator.bdf
+e4d03384759585244d66dbe364bf578
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Bloc_Decodificare_Afisare:inst13|Decodificator:inst4
+}
+# macro_sequence
+
+# end
+# entity
+Bloc_Memorare
+# storage
+db|Periodmetru.(3).cnf
+db|Periodmetru.(3).cnf
+# case_insensitive
+# source_file
+bloc_memorare.bdf
+c7ffc886421c33e7221e6fe2902d5
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Bloc_Memorare:inst19
+}
+# macro_sequence
+
+# end
+# entity
+Registru_Memorare
+# storage
+db|Periodmetru.(4).cnf
+db|Periodmetru.(4).cnf
+# case_insensitive
+# source_file
+registru_memorare.bdf
+f3a0ce64b61626e468e54bbeb76c9b
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Bloc_Memorare:inst19|Registru_Memorare:inst7
+Bloc_Memorare:inst19|Registru_Memorare:inst6
+Bloc_Memorare:inst19|Registru_Memorare:inst
+Bloc_Memorare:inst19|Registru_Memorare:inst5
+}
+# macro_sequence
+
+# end
+# entity
+Bloc_Comanda
+# storage
+db|Periodmetru.(5).cnf
+db|Periodmetru.(5).cnf
+# case_insensitive
+# source_file
+bloc_comanda.bdf
+77cc22704a98675479347f5a5637b70
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Bloc_Comanda:inst23
+}
+# macro_sequence
+
+# end
+# entity
+Divizor_2
+# storage
+db|Periodmetru.(7).cnf
+db|Periodmetru.(7).cnf
+# case_insensitive
+# source_file
+divizor_2.bdf
+6f213b1d8746811963a39ea116c1d744
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Bloc_Divizare:inst|Div_1296:inst2|Div_16:inst|Divizor_2:inst3
+Bloc_Divizare:inst|Div_1296:inst2|Div_16:inst|Divizor_2:inst2
+Bloc_Divizare:inst|Div_1296:inst2|Div_16:inst|Divizor_2:inst1
+Bloc_Divizare:inst|Div_1296:inst2|Div_16:inst|Divizor_2:inst
+Bloc_Divizare:inst|Divizor_2:inst
+Bloc_Divizare:inst|Divizor_2:inst28
+Bloc_Divizare:inst|Div_10:inst1|Divizor_2:inst
+Bloc_Divizare:inst|Divizor_2:inst30
+Bloc_Divizare:inst|Div_10:inst4|Divizor_2:inst
+Bloc_Divizare:inst|Div_10:inst3|Divizor_2:inst
+Bloc_Divizare:inst|Divizor_2:inst32
+Bloc_Divizare:inst|Div_10:inst7|Divizor_2:inst
+Bloc_Divizare:inst|Div_10:inst6|Divizor_2:inst
+Bloc_Divizare:inst|Div_10:inst5|Divizor_2:inst
+}
+# macro_sequence
+
+# end
+# entity
+Div_10
+# storage
+db|Periodmetru.(8).cnf
+db|Periodmetru.(8).cnf
+# case_insensitive
+# source_file
+div_10.bdf
+e3135c927e4f9c1138487bd88827ab
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Bloc_Divizare:inst|Div_10:inst1
+Bloc_Divizare:inst|Div_10:inst4
+Bloc_Divizare:inst|Div_10:inst3
+Bloc_Divizare:inst|Div_10:inst7
+Bloc_Divizare:inst|Div_10:inst6
+Bloc_Divizare:inst|Div_10:inst5
+}
+# macro_sequence
+
+# end
+# entity
+Div_5
+# storage
+db|Periodmetru.(9).cnf
+db|Periodmetru.(9).cnf
+# case_insensitive
+# source_file
+div_5.bdf
+88ecac0c554eab015a52b8cf212b466
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Bloc_Divizare:inst|Div_10:inst1|Div_5:inst1
+Bloc_Divizare:inst|Div_10:inst4|Div_5:inst1
+Bloc_Divizare:inst|Div_10:inst3|Div_5:inst1
+Bloc_Divizare:inst|Div_10:inst7|Div_5:inst1
+Bloc_Divizare:inst|Div_10:inst6|Div_5:inst1
+Bloc_Divizare:inst|Div_10:inst5|Div_5:inst1
+}
+# macro_sequence
+
+# end
+# entity
+Div_1296
+# storage
+db|Periodmetru.(10).cnf
+db|Periodmetru.(10).cnf
+# case_insensitive
+# source_file
+div_1296.bdf
+bd7cd7b39016a57d6638d9b7646f075
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Bloc_Divizare:inst|Div_1296:inst2
+}
+# macro_sequence
+
+# end
+# entity
+Div_81
+# storage
+db|Periodmetru.(11).cnf
+db|Periodmetru.(11).cnf
+# case_insensitive
+# source_file
+div_81.bdf
+38ceb4b3a275951cb1fea755ba1f9b
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Bloc_Divizare:inst|Div_1296:inst2|Div_81:inst1
+}
+# macro_sequence
+
+# end
+# entity
+Divizor_3
+# storage
+db|Periodmetru.(12).cnf
+db|Periodmetru.(12).cnf
+# case_insensitive
+# source_file
+divizor_3.bdf
+a241e592ef31413469b2595374d3c6
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Bloc_Divizare:inst|Div_1296:inst2|Div_81:inst1|Divizor_3:inst4
+Bloc_Divizare:inst|Div_1296:inst2|Div_81:inst1|Divizor_3:inst3
+Bloc_Divizare:inst|Div_1296:inst2|Div_81:inst1|Divizor_3:inst2
+Bloc_Divizare:inst|Div_1296:inst2|Div_81:inst1|Divizor_3:inst
+}
+# macro_sequence
+
+# end
+# entity
+Div_16
+# storage
+db|Periodmetru.(13).cnf
+db|Periodmetru.(13).cnf
+# case_insensitive
+# source_file
+div_16.bdf
+186671b1908119cc881aee57a452ce3e
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Bloc_Divizare:inst|Div_1296:inst2|Div_16:inst
+}
+# macro_sequence
+
+# end
+# entity
+Bloc_Numarare_V2
+# storage
+db|Periodmetru.(14).cnf
+db|Periodmetru.(14).cnf
+# case_insensitive
+# source_file
+bloc_numarare_v2.bdf
+4b7f186e23446d755aa43fa2c06167e5
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Bloc_Numarare_V2:inst18
+}
+# macro_sequence
+
+# end
+# entity
+Numarator_V2
+# storage
+db|Periodmetru.(15).cnf
+db|Periodmetru.(15).cnf
+# case_insensitive
+# source_file
+numarator_v2.bdf
+9e3c9b5bd4ab577c1cde576220e8ee
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Bloc_Numarare_V2:inst18|Numarator_V2:inst4
+Bloc_Numarare_V2:inst18|Numarator_V2:inst3
+Bloc_Numarare_V2:inst18|Numarator_V2:inst2
+Bloc_Numarare_V2:inst18|Numarator_V2:inst
+}
+# macro_sequence
+
+# end
+# entity
+Scaner
+# storage
+db|Periodmetru.(16).cnf
+db|Periodmetru.(16).cnf
+# case_insensitive
+# source_file
+scaner.bdf
+f542485b844931d543deeb7f5957c7
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Bloc_Decodificare_Afisare:inst13|Scaner:inst6
+}
+# macro_sequence
+
+# end
+# entity
+Mux41
+# storage
+db|Periodmetru.(18).cnf
+db|Periodmetru.(18).cnf
+# case_insensitive
+# source_file
+mux41.bdf
+bb3ff1a7b9e519f599d5eafb1620c3e9
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Bloc_Divizare:inst|Mux41:inst8
+Bloc_Decodificare_Afisare:inst13|Mux41:inst
+Bloc_Decodificare_Afisare:inst13|Mux41:inst1
+Bloc_Decodificare_Afisare:inst13|Mux41:inst2
+Bloc_Decodificare_Afisare:inst13|Mux41:inst3
+}
+# macro_sequence
+
+# end
+# entity
+Mux21
+# storage
+db|Periodmetru.(19).cnf
+db|Periodmetru.(19).cnf
+# case_insensitive
+# source_file
+mux21.bdf
+811b77fa1ecf5cdc36c9ea1848ffd14
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Bloc_Divizare:inst|Mux41:inst8|Mux21:inst2
+Bloc_Divizare:inst|Mux41:inst8|Mux21:inst
+Bloc_Divizare:inst|Mux41:inst8|Mux21:inst1
+Bloc_Decodificare_Afisare:inst13|Mux41:inst|Mux21:inst2
+Bloc_Decodificare_Afisare:inst13|Mux41:inst|Mux21:inst
+Bloc_Decodificare_Afisare:inst13|Mux41:inst|Mux21:inst1
+Bloc_Decodificare_Afisare:inst13|Mux41:inst1|Mux21:inst2
+Bloc_Decodificare_Afisare:inst13|Mux41:inst1|Mux21:inst
+Bloc_Decodificare_Afisare:inst13|Mux41:inst1|Mux21:inst1
+Bloc_Decodificare_Afisare:inst13|Mux41:inst2|Mux21:inst2
+Bloc_Decodificare_Afisare:inst13|Mux41:inst2|Mux21:inst
+Bloc_Decodificare_Afisare:inst13|Mux41:inst2|Mux21:inst1
+Bloc_Decodificare_Afisare:inst13|Mux41:inst3|Mux21:inst2
+Bloc_Decodificare_Afisare:inst13|Mux41:inst3|Mux21:inst
+Bloc_Decodificare_Afisare:inst13|Mux41:inst3|Mux21:inst1
+}
+# macro_sequence
+
+# end
+# entity
+Decodificator_de_adresa
+# storage
+db|Periodmetru.(2).cnf
+db|Periodmetru.(2).cnf
+# case_insensitive
+# source_file
+decodificator_de_adresa.bdf
+58a4b830801943b98031a5365eda63b3
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Bloc_Decodificare_Afisare:inst13|Decodificator_de_adresa:inst5
+}
+# macro_sequence
+
+# end
+# entity
+Bloc_Divizare
+# storage
+db|Periodmetru.(17).cnf
+db|Periodmetru.(17).cnf
+# case_insensitive
+# source_file
+bloc_divizare.bdf
+b7164ea21bf7fe466ba3dc80f6ec5b
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Bloc_Divizare:inst
+}
+# macro_sequence
+
+# end
+# entity
+Periodmetru
+# storage
+db|Periodmetru.(1).cnf
+db|Periodmetru.(1).cnf
+# case_insensitive
+# source_file
+periodmetru.bdf
+fbd58a805b8bd9ca38979b748b169a25
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+Bloc_Decodificare_Afisare
+# storage
+db|Periodmetru.(6).cnf
+db|Periodmetru.(6).cnf
+# case_insensitive
+# source_file
+bloc_decodificare_afisare.bdf
+991f1a1859a966250c8345cf614427
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Bloc_Decodificare_Afisare:inst13
+}
+# macro_sequence
+
+# end
+# complete
+

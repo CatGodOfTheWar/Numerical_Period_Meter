@@ -1,0 +1,396 @@
+Simulator report for Periodmetru
+Sun Feb 09 19:48:09 2025
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 5.0 ms       ;
+; Simulation Netlist Size     ; 146 nodes    ;
+; Simulation Coverage         ;      37.58 % ;
+; Total Number of Transitions ; 260397       ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; MAX II       ;
+; Device                      ; EPM240T100C3 ;
++-----------------------------+--------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                           ;
++--------------------------------------------------------------------------------------------+-----------------+---------------+
+; Option                                                                                     ; Setting         ; Default Value ;
++--------------------------------------------------------------------------------------------+-----------------+---------------+
+; Simulation mode                                                                            ; Timing          ; Timing        ;
+; Start time                                                                                 ; 0 ns            ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF            ;               ;
+; Vector input source                                                                        ; Periodmetru.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On              ; On            ;
+; Check outputs                                                                              ; Off             ; Off           ;
+; Report simulation coverage                                                                 ; On              ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On              ; On            ;
+; Display missing 1-value coverage report                                                    ; On              ; On            ;
+; Display missing 0-value coverage report                                                    ; On              ; On            ;
+; Detect setup and hold time violations                                                      ; Off             ; Off           ;
+; Detect glitches                                                                            ; Off             ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off             ; Off           ;
+; Generate Signal Activity File                                                              ; Off             ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off             ; Off           ;
+; Group bus channels in simulation results                                                   ; Off             ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On              ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE      ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off             ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off             ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto            ; Auto          ;
++--------------------------------------------------------------------------------------------+-----------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      37.58 % ;
+; Total nodes checked                                 ; 146          ;
+; Total output ports checked                          ; 149          ;
+; Total output ports with complete 1/0-value coverage ; 56           ;
+; Total output ports with no 1/0-value coverage       ; 85           ;
+; Total output ports with no 1-value coverage         ; 86           ;
+; Total output ports with no 0-value coverage         ; 92           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                  ;
++-------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                           ; Output Port Name                                                                    ; Output Port Type ;
++-------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------+------------------+
+; |Periodmetru|Bloc_Decodificare_Afisare:inst13|Decodificator_de_adresa:inst5|inst3   ; |Periodmetru|Bloc_Decodificare_Afisare:inst13|Decodificator_de_adresa:inst5|inst3   ; combout          ;
+; |Periodmetru|Bloc_Decodificare_Afisare:inst13|Decodificator_de_adresa:inst5|inst5~0 ; |Periodmetru|Bloc_Decodificare_Afisare:inst13|Decodificator_de_adresa:inst5|inst5~0 ; combout          ;
+; |Periodmetru|Bloc_Decodificare_Afisare:inst13|Decodificator_de_adresa:inst5|inst5~1 ; |Periodmetru|Bloc_Decodificare_Afisare:inst13|Decodificator_de_adresa:inst5|inst5~1 ; combout          ;
+; |Periodmetru|Bloc_Decodificare_Afisare:inst13|Decodificator_de_adresa:inst5|inst5~2 ; |Periodmetru|Bloc_Decodificare_Afisare:inst13|Decodificator_de_adresa:inst5|inst5~2 ; combout          ;
+; |Periodmetru|Bloc_Numarare_V2:inst18|Numarator_V2:inst|inst3                        ; |Periodmetru|Bloc_Numarare_V2:inst18|Numarator_V2:inst|inst3                        ; regout           ;
+; |Periodmetru|Bloc_Numarare_V2:inst18|Numarator_V2:inst|inst1                        ; |Periodmetru|Bloc_Numarare_V2:inst18|Numarator_V2:inst|inst1                        ; regout           ;
+; |Periodmetru|Bloc_Numarare_V2:inst18|Numarator_V2:inst|inst                         ; |Periodmetru|Bloc_Numarare_V2:inst18|Numarator_V2:inst|inst                         ; regout           ;
+; |Periodmetru|Bloc_Numarare_V2:inst18|Numarator_V2:inst2|inst1                       ; |Periodmetru|Bloc_Numarare_V2:inst18|Numarator_V2:inst2|inst1                       ; regout           ;
+; |Periodmetru|Bloc_Numarare_V2:inst18|Numarator_V2:inst2|inst                        ; |Periodmetru|Bloc_Numarare_V2:inst18|Numarator_V2:inst2|inst                        ; regout           ;
+; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst5|inst1                     ; |Periodmetru|Bloc_Decodificare_Afisare:inst13|Mux41:inst2|Mux21:inst2|inst5~0       ; combout          ;
+; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst|inst                       ; |Periodmetru|Bloc_Decodificare_Afisare:inst13|Mux41:inst3|Mux21:inst2|inst5~0       ; combout          ;
+; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst5|inst                      ; |Periodmetru|Bloc_Decodificare_Afisare:inst13|Mux41:inst3|Mux21:inst2|inst5~1       ; combout          ;
+; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst5|inst3                     ; |Periodmetru|Bloc_Decodificare_Afisare:inst13|Mux41:inst|Mux21:inst2|inst5~0        ; combout          ;
+; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst6|inst2                     ; |Periodmetru|Bloc_Decodificare_Afisare:inst13|Mux41:inst1|Mux21:inst2|inst5~0       ; combout          ;
+; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst5|inst2                     ; |Periodmetru|Bloc_Decodificare_Afisare:inst13|Mux41:inst1|Mux21:inst2|inst5~1       ; combout          ;
+; |Periodmetru|Bloc_Decodificare_Afisare:inst13|Decodificator:inst4|inst37~0          ; |Periodmetru|Bloc_Decodificare_Afisare:inst13|Decodificator:inst4|inst37~0          ; combout          ;
+; |Periodmetru|Bloc_Decodificare_Afisare:inst13|Decodificator:inst4|inst49~0          ; |Periodmetru|Bloc_Decodificare_Afisare:inst13|Decodificator:inst4|inst49~0          ; combout          ;
+; |Periodmetru|Bloc_Decodificare_Afisare:inst13|Decodificator:inst4|inst52            ; |Periodmetru|Bloc_Decodificare_Afisare:inst13|Decodificator:inst4|inst52            ; combout          ;
+; |Periodmetru|Bloc_Divizare:inst|Div_1296:inst2|Div_81:inst1|Divizor_3:inst4|inst13  ; |Periodmetru|Bloc_Divizare:inst|Div_1296:inst2|Div_81:inst1|Divizor_3:inst4|inst13  ; regout           ;
+; |Periodmetru|Bloc_Divizare:inst|Div_1296:inst2|Div_81:inst1|Divizor_3:inst3|inst14  ; |Periodmetru|Bloc_Divizare:inst|Div_1296:inst2|Div_81:inst1|Divizor_3:inst3|inst14  ; regout           ;
+; |Periodmetru|inst2                                                                  ; |Periodmetru|inst2                                                                  ; combout          ;
+; |Periodmetru|Bloc_Divizare:inst|Div_1296:inst2|Div_81:inst1|Divizor_3:inst3|inst13  ; |Periodmetru|Bloc_Divizare:inst|Div_1296:inst2|Div_81:inst1|Divizor_3:inst3|inst13  ; regout           ;
+; |Periodmetru|Bloc_Divizare:inst|Div_1296:inst2|Div_81:inst1|Divizor_3:inst2|inst14  ; |Periodmetru|Bloc_Divizare:inst|Div_1296:inst2|Div_81:inst1|Divizor_3:inst2|inst14  ; regout           ;
+; |Periodmetru|Bloc_Numarare_V2:inst18|Numarator_V2:inst|inst9                        ; |Periodmetru|Bloc_Numarare_V2:inst18|Numarator_V2:inst|inst9                        ; combout          ;
+; |Periodmetru|Bloc_Divizare:inst|Div_1296:inst2|Div_81:inst1|Divizor_3:inst2|inst13  ; |Periodmetru|Bloc_Divizare:inst|Div_1296:inst2|Div_81:inst1|Divizor_3:inst2|inst13  ; regout           ;
+; |Periodmetru|Bloc_Divizare:inst|Div_1296:inst2|Div_81:inst1|Divizor_3:inst|inst14   ; |Periodmetru|Bloc_Divizare:inst|Div_1296:inst2|Div_81:inst1|Divizor_3:inst|inst14   ; regout           ;
+; |Periodmetru|Bloc_Divizare:inst|Div_1296:inst2|Div_81:inst1|Divizor_3:inst|inst13   ; |Periodmetru|Bloc_Divizare:inst|Div_1296:inst2|Div_81:inst1|Divizor_3:inst|inst13   ; regout           ;
+; |Periodmetru|Bloc_Divizare:inst|Div_1296:inst2|Div_16:inst|Divizor_2:inst3|inst     ; |Periodmetru|Bloc_Divizare:inst|Div_1296:inst2|Div_16:inst|Divizor_2:inst3|inst     ; regout           ;
+; |Periodmetru|Bloc_Divizare:inst|Div_10:inst1|Div_5:inst1|inst13                     ; |Periodmetru|Bloc_Divizare:inst|Div_10:inst1|Div_5:inst1|inst13                     ; regout           ;
+; |Periodmetru|Bloc_Divizare:inst|Div_1296:inst2|Div_16:inst|Divizor_2:inst2|inst     ; |Periodmetru|Bloc_Divizare:inst|Div_1296:inst2|Div_16:inst|Divizor_2:inst2|inst     ; regout           ;
+; |Periodmetru|Bloc_Divizare:inst|Div_1296:inst2|Div_16:inst|Divizor_2:inst1|inst     ; |Periodmetru|Bloc_Divizare:inst|Div_1296:inst2|Div_16:inst|Divizor_2:inst1|inst     ; regout           ;
+; |Periodmetru|Bloc_Divizare:inst|Div_10:inst3|Div_5:inst1|inst13                     ; |Periodmetru|Bloc_Divizare:inst|Div_10:inst3|Div_5:inst1|inst13                     ; regout           ;
+; |Periodmetru|Bloc_Divizare:inst|Div_1296:inst2|Div_16:inst|Divizor_2:inst|inst      ; |Periodmetru|Bloc_Divizare:inst|Div_1296:inst2|Div_16:inst|Divizor_2:inst|inst      ; regout           ;
+; |Periodmetru|Bloc_Divizare:inst|Div_10:inst5|Div_5:inst1|inst13                     ; |Periodmetru|Bloc_Divizare:inst|Div_10:inst5|Div_5:inst1|inst13                     ; regout           ;
+; |Periodmetru|Bloc_Divizare:inst|Mux41:inst8|Mux21:inst2|inst5~0                     ; |Periodmetru|Bloc_Divizare:inst|Mux41:inst8|Mux21:inst2|inst5~0                     ; combout          ;
+; |Periodmetru|Bloc_Divizare:inst|Mux41:inst8|Mux21:inst2|inst5                       ; |Periodmetru|Bloc_Divizare:inst|Mux41:inst8|Mux21:inst2|inst5                       ; combout          ;
+; |Periodmetru|fx                                                                     ; |Periodmetru|fx~corein                                                              ; combout          ;
+; |Periodmetru|f0                                                                     ; |Periodmetru|f0~corein                                                              ; combout          ;
+; |Periodmetru|Clk_D_A                                                                ; |Periodmetru|Clk_D_A                                                                ; padio            ;
+; |Periodmetru|Clk_M                                                                  ; |Periodmetru|Clk_M                                                                  ; padio            ;
+; |Periodmetru|Clk_N                                                                  ; |Periodmetru|Clk_N                                                                  ; padio            ;
+; |Periodmetru|Tm                                                                     ; |Periodmetru|Tm                                                                     ; padio            ;
+; |Periodmetru|T0                                                                     ; |Periodmetru|T0                                                                     ; padio            ;
+; |Periodmetru|Celula[0]                                                              ; |Periodmetru|Celula[0]                                                              ; padio            ;
+; |Periodmetru|Celula[1]                                                              ; |Periodmetru|Celula[1]                                                              ; padio            ;
+; |Periodmetru|Celula[2]                                                              ; |Periodmetru|Celula[2]                                                              ; padio            ;
+; |Periodmetru|Celula[3]                                                              ; |Periodmetru|Celula[3]                                                              ; padio            ;
+; |Periodmetru|N_U[3]                                                                 ; |Periodmetru|N_U[3]                                                                 ; padio            ;
+; |Periodmetru|N_U[2]                                                                 ; |Periodmetru|N_U[2]                                                                 ; padio            ;
+; |Periodmetru|N_U[1]                                                                 ; |Periodmetru|N_U[1]                                                                 ; padio            ;
+; |Periodmetru|N_U[0]                                                                 ; |Periodmetru|N_U[0]                                                                 ; padio            ;
+; |Periodmetru|N_Z[1]                                                                 ; |Periodmetru|N_Z[1]                                                                 ; padio            ;
+; |Periodmetru|N_Z[0]                                                                 ; |Periodmetru|N_Z[0]                                                                 ; padio            ;
+; |Periodmetru|Seg[2]                                                                 ; |Periodmetru|Seg[2]                                                                 ; padio            ;
+; |Periodmetru|Seg[5]                                                                 ; |Periodmetru|Seg[5]                                                                 ; padio            ;
+; |Periodmetru|Seg[6]                                                                 ; |Periodmetru|Seg[6]                                                                 ; padio            ;
++-------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                    ;
++--------------------------------------------------------------------------+-------------------------------------------------------------------------------+------------------+
+; Node Name                                                                ; Output Port Name                                                              ; Output Port Type ;
++--------------------------------------------------------------------------+-------------------------------------------------------------------------------+------------------+
+; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst7|inst1          ; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst7|inst1               ; regout           ;
+; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst7|inst           ; |Periodmetru|Bloc_Comanda:inst23|OR_General~0                                 ; combout          ;
+; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst7|inst           ; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst7|inst                ; regout           ;
+; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst7|inst3          ; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst7|inst3               ; regout           ;
+; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst6|inst           ; |Periodmetru|Bloc_Comanda:inst23|OR_General~1                                 ; combout          ;
+; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst6|inst           ; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst6|inst                ; regout           ;
+; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst7|inst2          ; |Periodmetru|Bloc_Comanda:inst23|OR_General~2                                 ; combout          ;
+; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst7|inst2          ; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst7|inst2               ; regout           ;
+; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst|inst2           ; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst|inst2                ; regout           ;
+; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst|inst3           ; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst|inst3                ; regout           ;
+; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst|inst1           ; |Periodmetru|Bloc_Comanda:inst23|OR_General~3                                 ; combout          ;
+; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst|inst1           ; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst|inst1                ; regout           ;
+; |Periodmetru|Bloc_Numarare_V2:inst18|Numarator_V2:inst4|inst4            ; |Periodmetru|Bloc_Numarare_V2:inst18|Numarator_V2:inst4|inst4                 ; regout           ;
+; |Periodmetru|Bloc_Numarare_V2:inst18|Numarator_V2:inst4|inst3            ; |Periodmetru|Bloc_Numarare_V2:inst18|Numarator_V2:inst4|inst3                 ; regout           ;
+; |Periodmetru|Bloc_Numarare_V2:inst18|Numarator_V2:inst4|inst1            ; |Periodmetru|Bloc_Numarare_V2:inst18|Numarator_V2:inst4|inst1                 ; regout           ;
+; |Periodmetru|Bloc_Numarare_V2:inst18|Numarator_V2:inst4|inst             ; |Periodmetru|Bloc_Numarare_V2:inst18|Numarator_V2:inst4|inst                  ; regout           ;
+; |Periodmetru|Bloc_Numarare_V2:inst18|Numarator_V2:inst3|inst4            ; |Periodmetru|Bloc_Numarare_V2:inst18|Numarator_V2:inst3|inst4                 ; regout           ;
+; |Periodmetru|Bloc_Numarare_V2:inst18|Numarator_V2:inst3|inst3            ; |Periodmetru|Bloc_Numarare_V2:inst18|Numarator_V2:inst3|inst3                 ; regout           ;
+; |Periodmetru|Bloc_Numarare_V2:inst18|Numarator_V2:inst3|inst1            ; |Periodmetru|Bloc_Numarare_V2:inst18|Numarator_V2:inst3|inst1                 ; regout           ;
+; |Periodmetru|Bloc_Numarare_V2:inst18|Numarator_V2:inst3|inst             ; |Periodmetru|Bloc_Numarare_V2:inst18|Numarator_V2:inst3|inst                  ; regout           ;
+; |Periodmetru|Bloc_Numarare_V2:inst18|Numarator_V2:inst2|inst3            ; |Periodmetru|Bloc_Numarare_V2:inst18|Numarator_V2:inst2|inst3                 ; regout           ;
+; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst5|inst1          ; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst5|inst1               ; regout           ;
+; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst6|inst1          ; |Periodmetru|Bloc_Decodificare_Afisare:inst13|Mux41:inst2|Mux21:inst2|inst5~1 ; combout          ;
+; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst6|inst1          ; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst6|inst1               ; regout           ;
+; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst|inst            ; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst|inst                 ; regout           ;
+; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst5|inst           ; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst5|inst                ; regout           ;
+; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst5|inst3          ; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst5|inst3               ; regout           ;
+; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst6|inst3          ; |Periodmetru|Bloc_Decodificare_Afisare:inst13|Mux41:inst|Mux21:inst2|inst5~1  ; combout          ;
+; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst6|inst3          ; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst6|inst3               ; regout           ;
+; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst6|inst2          ; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst6|inst2               ; regout           ;
+; |Periodmetru|Bloc_Decodificare_Afisare:inst13|Decodificator:inst4|inst33 ; |Periodmetru|Bloc_Decodificare_Afisare:inst13|Decodificator:inst4|inst33      ; combout          ;
+; |Periodmetru|Bloc_Decodificare_Afisare:inst13|Decodificator:inst4|inst35 ; |Periodmetru|Bloc_Decodificare_Afisare:inst13|Decodificator:inst4|inst35      ; combout          ;
+; |Periodmetru|Bloc_Decodificare_Afisare:inst13|Decodificator:inst4|inst41 ; |Periodmetru|Bloc_Decodificare_Afisare:inst13|Decodificator:inst4|inst41      ; combout          ;
+; |Periodmetru|Bloc_Decodificare_Afisare:inst13|Decodificator:inst4|inst44 ; |Periodmetru|Bloc_Decodificare_Afisare:inst13|Decodificator:inst4|inst44      ; combout          ;
+; |Periodmetru|Bloc_Divizare:inst|Div_10:inst1|Divizor_2:inst|inst         ; |Periodmetru|Bloc_Divizare:inst|Div_10:inst1|Divizor_2:inst|inst              ; regout           ;
+; |Periodmetru|Bloc_Divizare:inst|Div_10:inst4|Divizor_2:inst|inst         ; |Periodmetru|Bloc_Divizare:inst|Div_10:inst4|Divizor_2:inst|inst              ; regout           ;
+; |Periodmetru|Bloc_Divizare:inst|Div_10:inst7|Divizor_2:inst|inst         ; |Periodmetru|Bloc_Divizare:inst|Div_10:inst7|Divizor_2:inst|inst              ; regout           ;
+; |Periodmetru|Bloc_Numarare_V2:inst18|Numarator_V2:inst3|inst9            ; |Periodmetru|Bloc_Numarare_V2:inst18|Numarator_V2:inst3|inst9                 ; combout          ;
+; |Periodmetru|Bloc_Numarare_V2:inst18|Numarator_V2:inst2|inst9            ; |Periodmetru|Bloc_Numarare_V2:inst18|Numarator_V2:inst2|inst9                 ; combout          ;
+; |Periodmetru|Bloc_Divizare:inst|Div_10:inst1|Div_5:inst1|inst15          ; |Periodmetru|Bloc_Divizare:inst|Div_10:inst1|Div_5:inst1|inst15               ; regout           ;
+; |Periodmetru|Bloc_Divizare:inst|Div_10:inst4|Div_5:inst1|inst15          ; |Periodmetru|Bloc_Divizare:inst|Div_10:inst4|Div_5:inst1|inst15               ; regout           ;
+; |Periodmetru|Bloc_Divizare:inst|Div_10:inst7|Div_5:inst1|inst15          ; |Periodmetru|Bloc_Divizare:inst|Div_10:inst7|Div_5:inst1|inst15               ; regout           ;
+; |Periodmetru|Bloc_Divizare:inst|Div_10:inst4|Div_5:inst1|inst13          ; |Periodmetru|Bloc_Divizare:inst|Div_10:inst4|Div_5:inst1|inst13               ; regout           ;
+; |Periodmetru|Bloc_Divizare:inst|Div_10:inst4|Div_5:inst1|inst14          ; |Periodmetru|Bloc_Divizare:inst|Div_10:inst4|Div_5:inst1|inst14               ; regout           ;
+; |Periodmetru|Bloc_Divizare:inst|Div_10:inst3|Divizor_2:inst|inst         ; |Periodmetru|Bloc_Divizare:inst|Div_10:inst3|Divizor_2:inst|inst              ; regout           ;
+; |Periodmetru|Bloc_Divizare:inst|Div_10:inst7|Div_5:inst1|inst13          ; |Periodmetru|Bloc_Divizare:inst|Div_10:inst7|Div_5:inst1|inst13               ; regout           ;
+; |Periodmetru|Bloc_Divizare:inst|Div_10:inst7|Div_5:inst1|inst14          ; |Periodmetru|Bloc_Divizare:inst|Div_10:inst7|Div_5:inst1|inst14               ; regout           ;
+; |Periodmetru|Bloc_Divizare:inst|Div_10:inst6|Divizor_2:inst|inst         ; |Periodmetru|Bloc_Divizare:inst|Div_10:inst6|Divizor_2:inst|inst              ; regout           ;
+; |Periodmetru|Bloc_Divizare:inst|Div_10:inst3|Div_5:inst1|inst15          ; |Periodmetru|Bloc_Divizare:inst|Div_10:inst3|Div_5:inst1|inst15               ; regout           ;
+; |Periodmetru|Bloc_Divizare:inst|Div_10:inst6|Div_5:inst1|inst15          ; |Periodmetru|Bloc_Divizare:inst|Div_10:inst6|Div_5:inst1|inst15               ; regout           ;
+; |Periodmetru|Bloc_Divizare:inst|Div_10:inst6|Div_5:inst1|inst13          ; |Periodmetru|Bloc_Divizare:inst|Div_10:inst6|Div_5:inst1|inst13               ; regout           ;
+; |Periodmetru|Bloc_Divizare:inst|Div_10:inst6|Div_5:inst1|inst14          ; |Periodmetru|Bloc_Divizare:inst|Div_10:inst6|Div_5:inst1|inst14               ; regout           ;
+; |Periodmetru|Bloc_Divizare:inst|Div_10:inst5|Divizor_2:inst|inst         ; |Periodmetru|Bloc_Divizare:inst|Div_10:inst5|Divizor_2:inst|inst              ; regout           ;
+; |Periodmetru|Bloc_Divizare:inst|Div_10:inst5|Div_5:inst1|inst15          ; |Periodmetru|Bloc_Divizare:inst|Div_10:inst5|Div_5:inst1|inst15               ; regout           ;
+; |Periodmetru|A0                                                          ; |Periodmetru|A0~corein                                                        ; combout          ;
+; |Periodmetru|A1                                                          ; |Periodmetru|A1~corein                                                        ; combout          ;
+; |Periodmetru|Reset_N                                                     ; |Periodmetru|Reset_N                                                          ; padio            ;
+; |Periodmetru|M_M[3]                                                      ; |Periodmetru|M_M[3]                                                           ; padio            ;
+; |Periodmetru|M_M[2]                                                      ; |Periodmetru|M_M[2]                                                           ; padio            ;
+; |Periodmetru|M_M[1]                                                      ; |Periodmetru|M_M[1]                                                           ; padio            ;
+; |Periodmetru|M_M[0]                                                      ; |Periodmetru|M_M[0]                                                           ; padio            ;
+; |Periodmetru|M_S[3]                                                      ; |Periodmetru|M_S[3]                                                           ; padio            ;
+; |Periodmetru|M_S[2]                                                      ; |Periodmetru|M_S[2]                                                           ; padio            ;
+; |Periodmetru|M_S[1]                                                      ; |Periodmetru|M_S[1]                                                           ; padio            ;
+; |Periodmetru|M_S[0]                                                      ; |Periodmetru|M_S[0]                                                           ; padio            ;
+; |Periodmetru|M_U[3]                                                      ; |Periodmetru|M_U[3]                                                           ; padio            ;
+; |Periodmetru|M_U[2]                                                      ; |Periodmetru|M_U[2]                                                           ; padio            ;
+; |Periodmetru|M_U[1]                                                      ; |Periodmetru|M_U[1]                                                           ; padio            ;
+; |Periodmetru|M_U[0]                                                      ; |Periodmetru|M_U[0]                                                           ; padio            ;
+; |Periodmetru|M_Z[3]                                                      ; |Periodmetru|M_Z[3]                                                           ; padio            ;
+; |Periodmetru|M_Z[2]                                                      ; |Periodmetru|M_Z[2]                                                           ; padio            ;
+; |Periodmetru|M_Z[0]                                                      ; |Periodmetru|M_Z[0]                                                           ; padio            ;
+; |Periodmetru|N_M[3]                                                      ; |Periodmetru|N_M[3]                                                           ; padio            ;
+; |Periodmetru|N_M[2]                                                      ; |Periodmetru|N_M[2]                                                           ; padio            ;
+; |Periodmetru|N_M[1]                                                      ; |Periodmetru|N_M[1]                                                           ; padio            ;
+; |Periodmetru|N_M[0]                                                      ; |Periodmetru|N_M[0]                                                           ; padio            ;
+; |Periodmetru|N_S[3]                                                      ; |Periodmetru|N_S[3]                                                           ; padio            ;
+; |Periodmetru|N_S[2]                                                      ; |Periodmetru|N_S[2]                                                           ; padio            ;
+; |Periodmetru|N_S[1]                                                      ; |Periodmetru|N_S[1]                                                           ; padio            ;
+; |Periodmetru|N_S[0]                                                      ; |Periodmetru|N_S[0]                                                           ; padio            ;
+; |Periodmetru|N_Z[3]                                                      ; |Periodmetru|N_Z[3]                                                           ; padio            ;
+; |Periodmetru|N_Z[2]                                                      ; |Periodmetru|N_Z[2]                                                           ; padio            ;
+; |Periodmetru|Seg[0]                                                      ; |Periodmetru|Seg[0]                                                           ; padio            ;
+; |Periodmetru|Seg[1]                                                      ; |Periodmetru|Seg[1]                                                           ; padio            ;
+; |Periodmetru|Seg[3]                                                      ; |Periodmetru|Seg[3]                                                           ; padio            ;
+; |Periodmetru|Seg[4]                                                      ; |Periodmetru|Seg[4]                                                           ; padio            ;
++--------------------------------------------------------------------------+-------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                    ;
++--------------------------------------------------------------------------+-------------------------------------------------------------------------------+------------------+
+; Node Name                                                                ; Output Port Name                                                              ; Output Port Type ;
++--------------------------------------------------------------------------+-------------------------------------------------------------------------------+------------------+
+; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst7|inst1          ; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst7|inst1               ; regout           ;
+; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst7|inst           ; |Periodmetru|Bloc_Comanda:inst23|OR_General~0                                 ; combout          ;
+; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst7|inst           ; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst7|inst                ; regout           ;
+; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst7|inst3          ; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst7|inst3               ; regout           ;
+; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst6|inst           ; |Periodmetru|Bloc_Comanda:inst23|OR_General~1                                 ; combout          ;
+; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst6|inst           ; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst6|inst                ; regout           ;
+; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst7|inst2          ; |Periodmetru|Bloc_Comanda:inst23|OR_General~2                                 ; combout          ;
+; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst7|inst2          ; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst7|inst2               ; regout           ;
+; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst|inst2           ; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst|inst2                ; regout           ;
+; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst|inst3           ; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst|inst3                ; regout           ;
+; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst|inst1           ; |Periodmetru|Bloc_Comanda:inst23|OR_General~3                                 ; combout          ;
+; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst|inst1           ; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst|inst1                ; regout           ;
+; |Periodmetru|Bloc_Comanda:inst23|OR_General~4                            ; |Periodmetru|Bloc_Comanda:inst23|OR_General~4                                 ; combout          ;
+; |Periodmetru|Bloc_Comanda:inst23|inst                                    ; |Periodmetru|Bloc_Comanda:inst23|inst                                         ; combout          ;
+; |Periodmetru|Bloc_Numarare_V2:inst18|Numarator_V2:inst4|inst4            ; |Periodmetru|Bloc_Numarare_V2:inst18|Numarator_V2:inst4|inst4                 ; regout           ;
+; |Periodmetru|Bloc_Numarare_V2:inst18|Numarator_V2:inst4|inst3            ; |Periodmetru|Bloc_Numarare_V2:inst18|Numarator_V2:inst4|inst3                 ; regout           ;
+; |Periodmetru|Bloc_Numarare_V2:inst18|Numarator_V2:inst4|inst1            ; |Periodmetru|Bloc_Numarare_V2:inst18|Numarator_V2:inst4|inst1                 ; regout           ;
+; |Periodmetru|Bloc_Numarare_V2:inst18|Numarator_V2:inst4|inst             ; |Periodmetru|Bloc_Numarare_V2:inst18|Numarator_V2:inst4|inst                  ; regout           ;
+; |Periodmetru|Bloc_Numarare_V2:inst18|Numarator_V2:inst3|inst4            ; |Periodmetru|Bloc_Numarare_V2:inst18|Numarator_V2:inst3|inst4                 ; regout           ;
+; |Periodmetru|Bloc_Numarare_V2:inst18|Numarator_V2:inst3|inst3            ; |Periodmetru|Bloc_Numarare_V2:inst18|Numarator_V2:inst3|inst3                 ; regout           ;
+; |Periodmetru|Bloc_Numarare_V2:inst18|Numarator_V2:inst3|inst1            ; |Periodmetru|Bloc_Numarare_V2:inst18|Numarator_V2:inst3|inst1                 ; regout           ;
+; |Periodmetru|Bloc_Numarare_V2:inst18|Numarator_V2:inst3|inst             ; |Periodmetru|Bloc_Numarare_V2:inst18|Numarator_V2:inst3|inst                  ; regout           ;
+; |Periodmetru|Bloc_Numarare_V2:inst18|Numarator_V2:inst2|inst3            ; |Periodmetru|Bloc_Numarare_V2:inst18|Numarator_V2:inst2|inst3                 ; regout           ;
+; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst5|inst1          ; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst5|inst1               ; regout           ;
+; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst6|inst1          ; |Periodmetru|Bloc_Decodificare_Afisare:inst13|Mux41:inst2|Mux21:inst2|inst5~1 ; combout          ;
+; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst6|inst1          ; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst6|inst1               ; regout           ;
+; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst|inst            ; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst|inst                 ; regout           ;
+; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst5|inst           ; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst5|inst                ; regout           ;
+; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst5|inst3          ; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst5|inst3               ; regout           ;
+; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst6|inst3          ; |Periodmetru|Bloc_Decodificare_Afisare:inst13|Mux41:inst|Mux21:inst2|inst5~1  ; combout          ;
+; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst6|inst3          ; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst6|inst3               ; regout           ;
+; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst6|inst2          ; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst6|inst2               ; regout           ;
+; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst5|inst2          ; |Periodmetru|Bloc_Memorare:inst19|Registru_Memorare:inst5|inst2               ; regout           ;
+; |Periodmetru|Bloc_Decodificare_Afisare:inst13|Decodificator:inst4|inst33 ; |Periodmetru|Bloc_Decodificare_Afisare:inst13|Decodificator:inst4|inst33      ; combout          ;
+; |Periodmetru|Bloc_Decodificare_Afisare:inst13|Decodificator:inst4|inst35 ; |Periodmetru|Bloc_Decodificare_Afisare:inst13|Decodificator:inst4|inst35      ; combout          ;
+; |Periodmetru|Bloc_Decodificare_Afisare:inst13|Decodificator:inst4|inst41 ; |Periodmetru|Bloc_Decodificare_Afisare:inst13|Decodificator:inst4|inst41      ; combout          ;
+; |Periodmetru|Bloc_Decodificare_Afisare:inst13|Decodificator:inst4|inst44 ; |Periodmetru|Bloc_Decodificare_Afisare:inst13|Decodificator:inst4|inst44      ; combout          ;
+; |Periodmetru|Bloc_Divizare:inst|Div_10:inst1|Divizor_2:inst|inst         ; |Periodmetru|Bloc_Divizare:inst|Div_10:inst1|Divizor_2:inst|inst              ; regout           ;
+; |Periodmetru|Bloc_Divizare:inst|Div_10:inst4|Divizor_2:inst|inst         ; |Periodmetru|Bloc_Divizare:inst|Div_10:inst4|Divizor_2:inst|inst              ; regout           ;
+; |Periodmetru|Bloc_Divizare:inst|Div_10:inst7|Divizor_2:inst|inst         ; |Periodmetru|Bloc_Divizare:inst|Div_10:inst7|Divizor_2:inst|inst              ; regout           ;
+; |Periodmetru|Bloc_Numarare_V2:inst18|Numarator_V2:inst3|inst9            ; |Periodmetru|Bloc_Numarare_V2:inst18|Numarator_V2:inst3|inst9                 ; combout          ;
+; |Periodmetru|Bloc_Numarare_V2:inst18|Numarator_V2:inst2|inst9            ; |Periodmetru|Bloc_Numarare_V2:inst18|Numarator_V2:inst2|inst9                 ; combout          ;
+; |Periodmetru|Bloc_Divizare:inst|Div_10:inst1|Div_5:inst1|inst15          ; |Periodmetru|Bloc_Divizare:inst|Div_10:inst1|Div_5:inst1|inst15               ; regout           ;
+; |Periodmetru|Bloc_Divizare:inst|Div_10:inst4|Div_5:inst1|inst15          ; |Periodmetru|Bloc_Divizare:inst|Div_10:inst4|Div_5:inst1|inst15               ; regout           ;
+; |Periodmetru|Bloc_Divizare:inst|Div_10:inst7|Div_5:inst1|inst15          ; |Periodmetru|Bloc_Divizare:inst|Div_10:inst7|Div_5:inst1|inst15               ; regout           ;
+; |Periodmetru|Bloc_Divizare:inst|Div_10:inst1|Div_5:inst1|inst14          ; |Periodmetru|Bloc_Divizare:inst|Div_10:inst1|Div_5:inst1|inst14               ; regout           ;
+; |Periodmetru|Bloc_Divizare:inst|Div_10:inst4|Div_5:inst1|inst13          ; |Periodmetru|Bloc_Divizare:inst|Div_10:inst4|Div_5:inst1|inst13               ; regout           ;
+; |Periodmetru|Bloc_Divizare:inst|Div_10:inst4|Div_5:inst1|inst14          ; |Periodmetru|Bloc_Divizare:inst|Div_10:inst4|Div_5:inst1|inst14               ; regout           ;
+; |Periodmetru|Bloc_Divizare:inst|Div_10:inst3|Divizor_2:inst|inst         ; |Periodmetru|Bloc_Divizare:inst|Div_10:inst3|Divizor_2:inst|inst              ; regout           ;
+; |Periodmetru|Bloc_Divizare:inst|Div_10:inst7|Div_5:inst1|inst13          ; |Periodmetru|Bloc_Divizare:inst|Div_10:inst7|Div_5:inst1|inst13               ; regout           ;
+; |Periodmetru|Bloc_Divizare:inst|Div_10:inst7|Div_5:inst1|inst14          ; |Periodmetru|Bloc_Divizare:inst|Div_10:inst7|Div_5:inst1|inst14               ; regout           ;
+; |Periodmetru|Bloc_Divizare:inst|Div_10:inst6|Divizor_2:inst|inst         ; |Periodmetru|Bloc_Divizare:inst|Div_10:inst6|Divizor_2:inst|inst              ; regout           ;
+; |Periodmetru|Bloc_Divizare:inst|Div_10:inst3|Div_5:inst1|inst15          ; |Periodmetru|Bloc_Divizare:inst|Div_10:inst3|Div_5:inst1|inst15               ; regout           ;
+; |Periodmetru|Bloc_Divizare:inst|Div_10:inst6|Div_5:inst1|inst15          ; |Periodmetru|Bloc_Divizare:inst|Div_10:inst6|Div_5:inst1|inst15               ; regout           ;
+; |Periodmetru|Bloc_Divizare:inst|Div_10:inst3|Div_5:inst1|inst14          ; |Periodmetru|Bloc_Divizare:inst|Div_10:inst3|Div_5:inst1|inst14               ; regout           ;
+; |Periodmetru|Bloc_Divizare:inst|Div_10:inst6|Div_5:inst1|inst13          ; |Periodmetru|Bloc_Divizare:inst|Div_10:inst6|Div_5:inst1|inst13               ; regout           ;
+; |Periodmetru|Bloc_Divizare:inst|Div_10:inst6|Div_5:inst1|inst14          ; |Periodmetru|Bloc_Divizare:inst|Div_10:inst6|Div_5:inst1|inst14               ; regout           ;
+; |Periodmetru|Bloc_Divizare:inst|Div_10:inst5|Divizor_2:inst|inst         ; |Periodmetru|Bloc_Divizare:inst|Div_10:inst5|Divizor_2:inst|inst              ; regout           ;
+; |Periodmetru|Bloc_Divizare:inst|Div_10:inst5|Div_5:inst1|inst15          ; |Periodmetru|Bloc_Divizare:inst|Div_10:inst5|Div_5:inst1|inst15               ; regout           ;
+; |Periodmetru|Bloc_Divizare:inst|Div_10:inst5|Div_5:inst1|inst14          ; |Periodmetru|Bloc_Divizare:inst|Div_10:inst5|Div_5:inst1|inst14               ; regout           ;
+; |Periodmetru|A0                                                          ; |Periodmetru|A0~corein                                                        ; combout          ;
+; |Periodmetru|A1                                                          ; |Periodmetru|A1~corein                                                        ; combout          ;
+; |Periodmetru|M_M[3]                                                      ; |Periodmetru|M_M[3]                                                           ; padio            ;
+; |Periodmetru|M_M[2]                                                      ; |Periodmetru|M_M[2]                                                           ; padio            ;
+; |Periodmetru|M_M[1]                                                      ; |Periodmetru|M_M[1]                                                           ; padio            ;
+; |Periodmetru|M_M[0]                                                      ; |Periodmetru|M_M[0]                                                           ; padio            ;
+; |Periodmetru|M_S[3]                                                      ; |Periodmetru|M_S[3]                                                           ; padio            ;
+; |Periodmetru|M_S[2]                                                      ; |Periodmetru|M_S[2]                                                           ; padio            ;
+; |Periodmetru|M_S[1]                                                      ; |Periodmetru|M_S[1]                                                           ; padio            ;
+; |Periodmetru|M_S[0]                                                      ; |Periodmetru|M_S[0]                                                           ; padio            ;
+; |Periodmetru|M_U[3]                                                      ; |Periodmetru|M_U[3]                                                           ; padio            ;
+; |Periodmetru|M_U[2]                                                      ; |Periodmetru|M_U[2]                                                           ; padio            ;
+; |Periodmetru|M_U[1]                                                      ; |Periodmetru|M_U[1]                                                           ; padio            ;
+; |Periodmetru|M_U[0]                                                      ; |Periodmetru|M_U[0]                                                           ; padio            ;
+; |Periodmetru|M_Z[3]                                                      ; |Periodmetru|M_Z[3]                                                           ; padio            ;
+; |Periodmetru|M_Z[2]                                                      ; |Periodmetru|M_Z[2]                                                           ; padio            ;
+; |Periodmetru|M_Z[1]                                                      ; |Periodmetru|M_Z[1]                                                           ; padio            ;
+; |Periodmetru|M_Z[0]                                                      ; |Periodmetru|M_Z[0]                                                           ; padio            ;
+; |Periodmetru|N_M[3]                                                      ; |Periodmetru|N_M[3]                                                           ; padio            ;
+; |Periodmetru|N_M[2]                                                      ; |Periodmetru|N_M[2]                                                           ; padio            ;
+; |Periodmetru|N_M[1]                                                      ; |Periodmetru|N_M[1]                                                           ; padio            ;
+; |Periodmetru|N_M[0]                                                      ; |Periodmetru|N_M[0]                                                           ; padio            ;
+; |Periodmetru|N_S[3]                                                      ; |Periodmetru|N_S[3]                                                           ; padio            ;
+; |Periodmetru|N_S[2]                                                      ; |Periodmetru|N_S[2]                                                           ; padio            ;
+; |Periodmetru|N_S[1]                                                      ; |Periodmetru|N_S[1]                                                           ; padio            ;
+; |Periodmetru|N_S[0]                                                      ; |Periodmetru|N_S[0]                                                           ; padio            ;
+; |Periodmetru|N_Z[3]                                                      ; |Periodmetru|N_Z[3]                                                           ; padio            ;
+; |Periodmetru|N_Z[2]                                                      ; |Periodmetru|N_Z[2]                                                           ; padio            ;
+; |Periodmetru|Seg[0]                                                      ; |Periodmetru|Seg[0]                                                           ; padio            ;
+; |Periodmetru|Seg[1]                                                      ; |Periodmetru|Seg[1]                                                           ; padio            ;
+; |Periodmetru|Seg[3]                                                      ; |Periodmetru|Seg[3]                                                           ; padio            ;
+; |Periodmetru|Seg[4]                                                      ; |Periodmetru|Seg[4]                                                           ; padio            ;
++--------------------------------------------------------------------------+-------------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Sun Feb 09 19:48:06 2025
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off Periodmetru -c Periodmetru
+Info: Using vector source file "C:/Users/CatWarrior/Downloads/Proiect_SD/Periodmetru.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      37.58 %
+Info: Number of transitions in simulation is 260397
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 157 megabytes
+    Info: Processing ended: Sun Feb 09 19:48:09 2025
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
+
+
